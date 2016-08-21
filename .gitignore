@@ -17,7 +17,7 @@ target/
 .DS_Store
 
 # eclipse Files
-.classpath
-.project
+#.classpath
+#.project
 .settings/
 .metadata/
