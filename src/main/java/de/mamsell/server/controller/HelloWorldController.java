@@ -52,6 +52,12 @@ public class HelloWorldController {
         }
         return "redirect:/login?logout";
     }
+    
+    @RequestMapping(value="/records/new", method = RequestMethod.GET)
+    public String enterRecordPage (ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+    	model.addAttribute("user", getPrincipal());
+        return "records/new";
+    }
  
     private String getPrincipal(){
         String userName = null;

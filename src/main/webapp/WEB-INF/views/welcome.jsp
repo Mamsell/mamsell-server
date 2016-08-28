@@ -1,12 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Welcome page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Welcome page</title>
+<link href="<c:url value='/static/css/bootstrap.css' />"
+	rel="stylesheet"></link>
+<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css"
+	href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
 </head>
 <body>
-    Dear <strong>${user}</strong>, Welcome to Home Page.
-    <a href="<c:url value="/logout" />">Logout</a>
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">Home</a></li>
+			<li role="presentation"><a href="<c:url value="/records/new" />">Records</a></li>
+			<li role="presentation"><a href="#">Reports</a></li>
+			<li role="presentation"><a href="#">Settings</a></li>
+			<li role="presentation"><a href="<c:url value="/logout" />">Logout</a></li>
+		</ul>
+
+		<div class="jumbotron">
+			<h1>
+				Welcome, <strong>${user}</strong>!
+			</h1>
+			<p>
+				Welcome to Mamsell, your personal budget monitoring tool!<br>
+				Determine different budgets for different categories in order to
+				spend less or just keep track of where your money actually ends up.
+			</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#" role="button">Learn
+					more</a>
+			</p>
+		</div>
+
+	</div>
+
 </body>
 </html>
