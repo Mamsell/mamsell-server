@@ -15,16 +15,16 @@
 	<div class="container">
 		<ul class="nav nav-pills">
 			<li role="presentation" class="active"><a href="#">Home</a></li>
-			<li role="presentation"><a href="<c:url value="/records/new" />">Records</a></li>
+			<li role="presentation"><a href="<c:url value="/records/newRecord" />">Records</a></li>
 			<li role="presentation"><a href="#">Reports</a></li>
 			<li role="presentation"><a href="#">Settings</a></li>
 			<li role="presentation"><a href="<c:url value="/logout" />">Logout</a></li>
 		</ul>
 
 		<div class="jumbotron">
-			<h1>
+			<h2>
 				Welcome, <strong>${user}</strong>!
-			</h1>
+			</h2>
 			<p>
 				Welcome to Mamsell, your personal budget monitoring tool!<br>
 				Determine different budgets for different categories in order to
